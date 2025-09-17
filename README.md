@@ -112,9 +112,4 @@ Vercel automatically builds and updates the dashboard whenever changes are pushe
 
 Keerthana Ranganath
 
----
 
-  
-
-Do you want me to do that next?
-```
