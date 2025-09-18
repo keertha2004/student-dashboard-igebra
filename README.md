@@ -53,7 +53,7 @@ Responsive Design: desktop and mobile screens
 
 🏗 Architecture Diagram
 
-           +-----------------+
+                    +-----------------+
            |  Synthetic Data |
            |  students.json  |
            +--------+--------+
@@ -98,6 +98,7 @@ Responsive Design: desktop and mobile screens
            | Deployment:     |
            | Vercel Hosting  |
            +-----------------+
+
 
 
 📁 Project Structure
