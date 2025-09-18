@@ -39,43 +39,38 @@ It combines **data analysis (Python)** and a **full-stack dashboard (Next.js)** 
 ---
 
 ## 🏗 Architecture Diagram
-+-----------------+
-|  Synthetic Data |
-|  students.json  |
-+--------+--------+
-         |
-         v
-+-----------------+
-| Jupyter Notebook|
-| Data Analysis & |
-|  ML Model       |
-+--------+--------+
-         |
-         v
-+-----------------+
-|  Processed Data |
-| (JSON for Web)  |
-+--------+--------+
-         |
-         v
-+------------------+
-|  Next.js Frontend|
-| (React + Tailwind|
-|   + Recharts)    |
-+--------+---------+
-         |
-         v
-+-----------------+
-| Overview Stats  |
-| Charts & Table  |
-| Insights        |
-+-----------------+
-         |
-         v
-+-----------------+
-| Deployment:     |
-| Vercel Hosting  |
-+-----------------+
+
+```text
+           +-----------------+
+           |  Synthetic Data |
+           |  students.json  |
+           +--------+--------+
+                    |
+                    v
+           +-----------------+
+           | Jupyter Notebook|
+           | Data Analysis & |
+           |  ML Model       |
+           +--------+--------+
+                    |
+                    v
+           +-----------------+
+           |  Processed Data |
+           | (JSON for Web)  |
+           +--------+--------+
+                    |
+                    v
+           +------------------+
+           |  Next.js Frontend|
+           | (React + Tailwind|
+           |   + Recharts)    |
+           +---------+--------+
+                    |
+                    v
+           +-----------------+
+           | Deployment:     |
+           | Vercel Hosting  |
+           +-----------------+
 
 
 ## 📁 Project Structure
