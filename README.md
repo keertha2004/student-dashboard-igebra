@@ -39,7 +39,6 @@ It combines **data analysis (Python)** and a **full-stack dashboard (Next.js)** 
 ---
 
 ## 🏗 Architecture Diagram
-
 +-----------------+
 |  Synthetic Data |
 |  students.json  |
