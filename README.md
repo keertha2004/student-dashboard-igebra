@@ -40,7 +40,6 @@ It combines **data analysis (Python)** and a **full-stack dashboard (Next.js)** 
 
 ## 🏗 Architecture Diagram
 
-```text
            +-----------------+
            |  Synthetic Data |
            |  students.json  |
@@ -75,7 +74,6 @@ It combines **data analysis (Python)** and a **full-stack dashboard (Next.js)** 
 
 ## 📁 Project Structure
 
-```
 student-dashboard-igebra
 │
 ├── components           # Dashboard UI components
