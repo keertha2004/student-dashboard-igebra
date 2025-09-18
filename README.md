@@ -1,7 +1,6 @@
 
 # 🧠 Cognitive Skills & Student Performance Dashboard
 
-This project was built as part of the **Igebra.ai Student Dashboard Assignment**.  
 It combines **data analysis (Python)** and a **full-stack dashboard (Next.js)** to explore how students’ cognitive skills impact academic performance.
 
 🔗 **Live Dashboard:** [student-dashboard-igebra.vercel.app](https://student-dashboard-igebra.vercel.app)  
@@ -41,52 +40,43 @@ It combines **data analysis (Python)** and a **full-stack dashboard (Next.js)** 
 
 ## 🏗 Architecture Diagram
 
-
-           +-----------------+
-           |  Synthetic Data |
-           |  students.json  |
-           +--------+--------+
-                    |
-                    v
-           +-----------------+
-           | Jupyter Notebook|
-           | Data Analysis & |
-           |  ML Model       |
-           +--------+--------+
-                    |
-                    v
-           +-----------------+
-           |  Processed Data |
-           | (JSON for Web)  |
-           +--------+--------+
-                    |
-                    v
-           +------------------+
-           |  Next.js Frontend|
-           | (React + Tailwind|
-           |   + Recharts)    |
-           +---------+--------+
-                    |
-     +--------------+---------------+
-     |                              |
-     v                              v
-+------------+                 +------------+
-| Overview   |                 | Charts     |
-| Stats Cards|                 | Bar/Scatter|
-+------------+                 | Radar      |
-                               +------------+
-     |                              |
-     v                              v
-+------------+                 +------------+
-| Student    |                 | Insights   |
-| Table      |                 | Section    |
-+------------+                 +------------+
-                    |
-                    v
-           +-----------------+
-           | Deployment:     |
-           | Vercel Hosting  |
-           +-----------------+
++-----------------+
+|  Synthetic Data |
+|  students.json  |
++--------+--------+
+         |
+         v
++-----------------+
+| Jupyter Notebook|
+| Data Analysis & |
+|  ML Model       |
++--------+--------+
+         |
+         v
++-----------------+
+|  Processed Data |
+| (JSON for Web)  |
++--------+--------+
+         |
+         v
++------------------+
+|  Next.js Frontend|
+| (React + Tailwind|
+|   + Recharts)    |
++--------+---------+
+         |
+         v
++-----------------+
+| Overview Stats  |
+| Charts & Table  |
+| Insights        |
++-----------------+
+         |
+         v
++-----------------+
+| Deployment:     |
+| Vercel Hosting  |
++-----------------+
 
 
 ## 📁 Project Structure
