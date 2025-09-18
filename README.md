@@ -1,115 +1,172 @@
-Absolutely! Here’s a **complete, polished README** tailored for your Igebra.ai dashboard project. You can copy-paste it directly into your repo as `README.md`.
+Cognitive Skills & Student Performance Dashboard
 
----
+It combines data analysis (Python) and a full-stack dashboard (Next.js) to explore how students’ cognitive skills impact academic performance.
 
-```markdown
-# Student Dashboard - Igebra.ai Assignment
+🔗 Live Dashboard: student-dashboard-igebra.vercel.app
 
-## Project Overview
-This project is a **Next.js dashboard** built to visualize and analyze a synthetic student dataset. It provides insights into students’ cognitive skills, assessment scores, and engagement patterns.
+📊 Features Implemented
+🧪 Data Analysis (Python + Jupyter Notebook)
 
-**Features:**
-- **Overview Stats:** Average scores and skills of students.  
-- **Charts:**
-  - **Bar Chart:** Skill vs Assessment Score  
-  - **Scatter Chart:** Attention vs Performance  
-  - **Radar Chart:** Individual student profiles  
-- **Student Table:** Searchable, sortable, and scrollable table of student data  
-- **Insights Section:** Key findings and ML model metrics (MSE & R²)  
+Created a synthetic dataset (students_processed.json)
 
----
+Performed exploratory data analysis
 
-## Dataset
-Synthetic dataset `students_processed.json` contains the following fields:  
-`student_id`, `name`, `class`, `comprehension`, `attention`, `focus`, `retention`, `assessment_score`, `engagement_time`.
+Visualized distributions of cognitive skills
 
----
+Checked correlations between skills and assessment scores
 
-## Analysis & Machine Learning
-- Correlation analysis between cognitive skills and assessment scores.
-- Simple **ML model** (e.g., Linear Regression) predicting `assessment_score`.
-- Students clustered into learning personas to identify performance patterns.
+Trained a Linear Regression model to predict assessment scores
 
-All analysis and model training are in the Jupyter Notebook provided.
+MSE: 32.98
 
----
+R² Score: 0.44
 
-## Project Structure
-```
+Identified performance clusters and learning patterns
 
-/dashboard-igebra
-├─ /components
-│   ├─ OverviewStats.js
-│   ├─ BarChart.js
-│   ├─ ScatterChart.js
-│   ├─ RadarChart.js
-│   ├─ StudentTable.js
-│   └─ Insights.js
-├─ /pages
-│   └─ index.js
-├─ /public
-│   └─ students\_processed.json
-├─ package.json
-└─ README.md
+💻 Interactive Dashboard (Next.js + Recharts)
 
-````
+Overview Stats Cards: total students, average assessment score, top-performing class
 
----
+Interactive Charts
 
-## Tech Stack
-- **Frontend:** Next.js, React, TailwindCSS  
-- **Charts:** Recharts  
-- **Data Analysis & ML:** Python (Jupyter Notebook)  
-- **Deployment:** Vercel  
+Bar Chart: Skill vs assessment score
 
----
+Scatter Chart: Attention vs performance
 
-## Setup Instructions
-1. **Clone the repository:**
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-````
+Radar Chart: Individual student profile
 
-2. **Install dependencies:**
+Student Table
 
-```bash
+Search by name
+
+Sort by name or score
+
+Scrollable table for large datasets
+
+Insights Section
+
+Key findings from analysis
+
+ML model metrics (MSE & R²)
+
+Responsive Design: desktop and mobile screens
+
+🏗 Architecture Diagram
+
+           +-----------------+
+           |  Synthetic Data |
+           |  students.json  |
+           +--------+--------+
+                    |
+                    v
+           +-----------------+
+           | Jupyter Notebook|
+           | Data Analysis & |
+           |  ML Model       |
+           +--------+--------+
+                    |
+                    v
+           +-----------------+
+           |  Processed Data |
+           | (JSON for Web)  |
+           +--------+--------+
+                    |
+                    v
+           +------------------+
+           |  Next.js Frontend|
+           | (React + Tailwind|
+           |   + Recharts)    |
+           +---------+--------+
+                    |
+     +--------------+---------------+
+     |                              |
+     v                              v
++------------+                 +------------+
+| Overview   |                 | Charts     |
+| Stats Cards|                 | Bar/Scatter|
++------------+                 | Radar      |
+                               +------------+
+     |                              |
+     v                              v
++------------+                 +------------+
+| Student    |                 | Insights   |
+| Table      |                 | Section    |
++------------+                 +------------+
+                    |
+                    v
+           +-----------------+
+           | Deployment:     |
+           | Vercel Hosting  |
+           +-----------------+
+
+
+📁 Project Structure
+student-dashboard-igebra
+│
+├── components           # Dashboard UI components
+│   ├── OverviewStats.js
+│   ├── BarChart.js
+│   ├── ScatterChart.js
+│   ├── RadarChart.js
+│   ├── StudentTable.js
+│   └── Insights.js
+│
+├── pages
+│   └── index.js
+│
+├── public
+│   └── students_processed.json
+│
+├── notebook              # Data analysis + ML notebook
+│   └── Student_Performance_Analysis.ipynb
+│
+├── styles
+├── docs/screenshots      # Add your screenshot images here
+├── package.json
+└── README.md
+
+⚙️ How to Run Locally
+# Clone the repository
+git clone https://github.com/keertha2004/student-dashboard-igebra.git
+
+cd student-dashboard-igebra
+
+# Install dependencies
 npm install
-```
 
-3. **Run locally:**
-
-```bash
+# Run the app
 npm run dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) to view the dashboard.
 
----
+Open http://localhost:3000
+ to view the dashboard.
 
-## Deployment
+🚀 Deployment
 
-The project is deployed on **Vercel**:
-[https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)
+Deployed on Vercel
 
-Vercel automatically builds and updates the dashboard whenever changes are pushed to the repository.
+Live link: student-dashboard-igebra.vercel.app
 
----
+Automatic redeploy whenever commits are pushed
 
-## Insights & Findings
+📈 Key Findings
 
-* Top performing clusters have higher comprehension and attention.
-* Students with low retention often need additional support.
-* Engagement time correlates moderately with assessment scores.
-* ML Model Metrics:
+Students with higher attention tend to perform better
 
-  * **Mean Squared Error (MSE):** 32.98
-  * **R² Score:** 0.44
+Retention positively correlates with engagement time
 
----
+Some students show low comprehension, highlighting areas for intervention
 
-## Author
+🧩 Tech Stack
+
+Frontend: Next.js, React, TailwindCSS
+
+Charts: Recharts
+
+Data Analysis: Python (Jupyter Notebook)
+
+Deployment: Vercel
+
+👩‍💻 Author
 
 Keerthana Ranganath
-
-
